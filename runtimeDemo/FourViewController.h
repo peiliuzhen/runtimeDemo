@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FourViewController.h
 //  runtimeDemo
 //
 //  Created by plz on 2017/6/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FourViewController : UIViewController
 
 @end
-

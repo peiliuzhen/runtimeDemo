@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BWNavController.h"
+#import "BWViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor=[UIColor whiteColor];
+    self.window.rootViewController=[[BWNavController alloc]initWithRootViewController:[[BWViewController alloc]init]];
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
     return YES;
 }
 
